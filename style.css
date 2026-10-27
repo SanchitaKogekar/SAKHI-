@@ -1,0 +1,38 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; line-height: 1.65; color: #20343b; background: #f6faf8; }
+.top { background: linear-gradient(135deg, #073b3a, #087e73); color: white; }
+nav { max-width: 1100px; margin: auto; padding: 22px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.logo { font-weight: 800; font-size: 1.5rem; letter-spacing: 1px; }
+.logo span { color: #a6e3c7; }
+.links { display: flex; gap: 22px; flex-wrap: wrap; }
+.links a { color: white; text-decoration: none; }
+.links a:hover { text-decoration: underline; }
+.hero { max-width: 1000px; margin: auto; padding: 78px 24px 86px; }
+.eyebrow, .label { font-size: .78rem; font-weight: 800; letter-spacing: 2px; }
+.eyebrow { color: #bcebd8; }
+h1 { font-size: clamp(2.6rem, 7vw, 5rem); line-height: 1.08; margin: 18px 0; }
+h1 span { color: #bcebd8; }
+.intro { max-width: 650px; font-size: 1.15rem; }
+.btn { display: inline-block; margin-top: 18px; padding: 12px 22px; border-radius: 28px; background: #c4f0d9; color: #073b3a; text-decoration: none; font-weight: 800; }
+.note { font-size: .85rem; color: #d6eee5; margin-top: 22px; }
+main { max-width: 1100px; margin: auto; padding: 20px 22px 50px; }
+.section { padding: 40px 0; }
+.label { color: #087e73; }
+h2 { font-size: clamp(1.7rem, 4vw, 2.5rem); line-height: 1.2; margin-top: 8px; }
+.section > p:not(.label) { max-width: 800px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; margin-top: 25px; }
+.card { background: white; padding: 24px; border-radius: 16px; box-shadow: 0 8px 25px rgba(14, 60, 53, .07); border: 1px solid #e4efeb; }
+.card h3 { margin-bottom: 8px; color: #087e73; }
+.icon { font-size: 1.8rem; color: #087e73; font-weight: 800; }
+.journey { background: white; padding: 32px; border-radius: 18px; }
+.journey li { padding: 8px 0 8px 8px; }
+.roadmap { padding: 42px 0; }
+.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.steps > div { border-top: 3px solid #087e73; padding: 18px; background: #eaf6f1; border-radius: 0 0 12px 12px; }
+.steps b { font-size: 1.6rem; color: #087e73; }
+.disclaimer { background: #fff4dc; border-left: 5px solid #d39a28; padding: 22px 26px; border-radius: 10px; }
+.disclaimer h2 { font-size: 1.5rem; }
+footer { background: #073b3a; color: white; text-align: center; padding: 28px 20px; }
+footer p { margin-bottom: 0; color: #c8e6dc; font-size: .9rem; }
+@media (max-width: 560px) { nav { align-items: flex-start; flex-direction: column; } .links { gap: 14px; } .hero { padding-top: 48px; } .journey { padding: 22px; } }
